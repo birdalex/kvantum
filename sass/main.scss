@@ -1,0 +1,16 @@
+body {
+  min-width: 320px;
+  color: #433c3a;
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+}
+@import"resetCss";
+@import"colors";
+@import"fontello";
+@import"header";
+
+

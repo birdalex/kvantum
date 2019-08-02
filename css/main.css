@@ -1,0 +1,1084 @@
+@charset "UTF-8";
+body {
+  min-width: 320px;
+  color: #433c3a;
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: https://meyerweb.com
+	HTML5 Doctor				:: https://html5doctor.com
+	and the HTML5 Boilerplate	:: https://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+/* Handle box-sizing while better addressing child elements:
+   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects
+*/
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+
+#map img {
+		max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td,
+td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?47908468");
+  src: url("../fonts/fontello.eot?47908468#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?47908468") format("woff2"), url("../fonts/fontello.woff?47908468") format("woff"), url("../fonts/fontello.ttf?47908468") format("truetype"), url("../fonts/fontello.svg?47908468#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?47908468#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-phone:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-search:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-basket:before {
+  content: '\e802';
+}
+
+/* '' */
+.icon-location-outline:before {
+  content: '\e803';
+}
+
+/* '' */
+.header {
+  width: 100%;
+}
+
+.header .header-top {
+  height: 40px;
+  background-color: #433e3d;
+}
+
+.header .header-top-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 40px;
+}
+
+.header .header-top-link li {
+  color: #b3a290;
+  font-size: 14px;
+}
+
+.header .header-top-link li:hover {
+  color: #ff733f;
+}
+
+.header .header-bottom-link {
+  position: relative;
+  left: -41px;
+}
+
+.header .header-bottom-link li {
+  font-size: 18px;
+}
+
+.header .header-bottom-link li a {
+  display: block;
+  color: #433c3a;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+
+.header .header-bottom-link li a:after {
+  background: #ff733f;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  content: "";
+}
+
+.header .header-bottom-link li a:hover {
+  color: #ff733f;
+}
+
+.header .header-bottom-link li a:hover::after {
+  width: 100%;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.header-sub {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .logo {
+  width: 350px;
+}
+
+.header .logo:hover {
+  opacity: .7;
+}
+
+.header .form-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .warranty-link:hover {
+  color: #ff733f;
+}
+
+.header .warranty-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .warranty-icon {
+  width: 30px;
+  height: 30px;
+  background: url(../img/icon/check.png);
+  background-size: cover;
+}
+
+.header .warranty-text {
+  margin-left: 10px;
+  width: 100px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  margin-right: 25px;
+}
+
+.header .serch {
+  max-width: 100%;
+  width: 357px;
+  position: relative;
+  padding: 0 0 0 18px;
+  border-radius: 3px;
+  background: #faefe8;
+  border: 1px solid #e5d2c4;
+}
+
+.header .search__icon {
+  position: relative;
+  top: 6px;
+  width: 25px;
+  height: 25px;
+}
+
+.header .search__input {
+  color: #433c3a;
+  background: transparent;
+  font-size: 14px;
+  border: none;
+  padding: 10px 0 9px;
+  width: 47%;
+  margin-left: 15px;
+}
+
+.header .search__submit {
+  background: #ff733f;
+  border: none;
+  padding: 12px 32px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  float: right;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  height: calc(100% + 2px);
+  width: 108px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.header .search__submit:hover {
+  background: #fc5a1f;
+}
+
+.header .header-contacts-phone {
+  font-weight: 700;
+  text-align: right;
+  font-size: 18px;
+}
+
+.header .header-contacts-street {
+  font-weight: 300;
+}
+
+.header .header-bottom {
+  position: relative;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .catalog-block {
+  width: 245px;
+  padding: 12px 18px 12px 17px;
+  background: #ff733f;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.header .catalog-block:hover {
+  background-color: #fc5a1f;
+}
+
+.header .catalog-block-active {
+  -webkit-transition: background .7s;
+  transition: background .7s;
+  background: #433e3d;
+}
+
+.header .catalog-block-active:hover {
+  background-color: #433e3d;
+}
+
+.header .catalog-block-text {
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  font-weight: 700;
+}
+
+.header .burger-catalog {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.header .burger-catalog:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  top: 5px;
+}
+
+.header .burger-catalog:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  top: -5px;
+}
+
+.header .marker-catalog,
+.header .marker-basket {
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 2px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.header .marker-catalog:before,
+.header .marker-basket:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .marker-catalog:after,
+.header .marker-basket:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 6px;
+  top: 0px;
+}
+
+.header .marker-catalog-active,
+.header .marker-basket-active {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header .marker-basket {
+  top: 20px;
+  left: 13px;
+}
+
+.header .menu-catalog {
+  display: none;
+  position: absolute;
+  top: 40px;
+  background: #eedbce;
+}
+
+.header .menu-catalog .catalog-headline__link {
+  position: relative;
+  display: block;
+  padding: 10px 40px 10px 40px;
+  letter-spacing: 1px;
+  width: 400px;
+}
+
+.header .menu-catalog .catalog-headline__link:hover > .marker-catalog__link {
+  display: block;
+}
+
+.header .menu-catalog li {
+  border-bottom: 1px solid #e3d1c4;
+}
+
+.header .menu-catalog li .marker-catalog__link {
+  position: absolute;
+  right: 50px;
+  top: 45%;
+  display: none;
+}
+
+.header .menu-catalog li .marker-catalog__link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: #433c3a;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .menu-catalog li .marker-catalog__link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  width: 10px;
+  height: 2px;
+  background-color: #433c3a;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.header .menu-catalog li:hover {
+  -webkit-transition: background .7s;
+  transition: background .7s;
+  background: #faefe8;
+}
+
+.header .menu-catalog li:hover > .submenu-catalog {
+  display: block;
+}
+
+.header .menu-catalog li:hover > .wrapping-submenu-catalog {
+  display: block;
+}
+
+.header .submenu-catalog-title {
+  font-weight: 700;
+  color: #000;
+}
+
+.header .wrapping-submenu-catalog {
+  display: none;
+  position: absolute;
+  left: 400px;
+  top: 0;
+  background: #faefe8;
+  width: 100%;
+  height: auto;
+}
+
+.header .submenu-catalog {
+  position: absolute;
+  top: 0;
+  background: #faefe8;
+  padding: 20px 20px 30px 20px;
+}
+
+.header .submenu-catalog li {
+  width: 600px;
+  margin-bottom: 10px;
+  padding: 0;
+  border: none;
+}
+
+.header .submenu-catalog li a {
+  position: relative;
+  display: inline-block;
+  color: #bba492;
+  z-index: 0;
+  font-size: 13px;
+  padding: 5px 20px 4px 11px;
+  overflow: hidden;
+}
+
+.header .submenu-catalog li a::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 3px;
+  background: #eedbce;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+}
+
+.header .submenu-catalog li a:hover {
+  color: #ff733f;
+}
+
+.header .submenu-catalog li a:hover::after {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.header .basket-block {
+  position: relative;
+  left: -41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 160px;
+  font-weight: 700;
+  color: #fff;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 3px;
+  background: #433c3a;
+  text-align: center;
+  letter-spacing: .7px;
+  cursor: pointer;
+}
+
+.header .basket-block__img {
+  opacity: .7;
+  max-width: 25px;
+  max-height: 25px;
+  margin-left: 15px;
+}
+
+.header .basket-block__sum {
+  font-size: 18px;
+}
+
+.header .basket-block__sum span {
+  font-size: 14px;
+}
+
+.header .basket-block__marker {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #433c3a;
+  border-radius: 3px;
+  right: -41px;
+}
+
+.header .basket-block__marker-active {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header .basket-block:hover {
+  background-color: #fc5a1f;
+}
+
+.header .basket-block:hover > .basket-block__marker {
+  background-color: #fc5a1f;
+}
+
+.header .basket-block-active {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  z-index: 99;
+  width: 480px;
+  height: 255px;
+  border: 1px solid #faefe8;
+  border-radius: 3px;
+  padding: 0 20px 29px;
+  background-color: #fff;
+}
+
+.header .triangle {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-bottom-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 9px;
+  border-bottom: 6px solid #faefe8;
+  top: -15px;
+  right: 8px;
+}
+
+.header .basket-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #faefe8;
+}
+
+.header .close-list__item {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header .close-list__item span {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 2px;
+}
+
+.header .close-list__item span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: #000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .close-list__item span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: #000;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.header .close-list__item:hover > span:before {
+  display: none;
+}
+
+.header .close-list__item:hover > span:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header .basket-list__img {
+  margin-left: 20px;
+}
+
+.header .basket-list__content {
+  margin-left: 20px;
+}
+
+.header .basket-list__content a {
+  display: block;
+}
+
+.header .basket-sum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.header .basket-sum__text {
+  font-size: 24px;
+}
+
+.header .basket-sum__num {
+  font-size: 24px;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.header .basket-sum__num .grn {
+  font-size: 20px;
+}
+
+.header .basket-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .7px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.header .basket-btn__one {
+  width: 210px;
+  height: 40px;
+  line-height: 20px;
+  display: block;
+  border: 2px solid #faefe8;
+  padding: 10px 10px;
+  border-radius: 3px;
+}
+
+.header .basket-btn__one:hover {
+  background-color: #ff733f;
+  color: #fff;
+  border: none;
+}
+
+.header .basket-btn__order {
+  width: 210px;
+  height: 40px;
+  line-height: 20px;
+  display: block;
+  padding: 10px 10px;
+  background-color: #ff733f;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.header .basket-btn__order:hover {
+  background-color: #fc5a1f;
+}
+/*# sourceMappingURL=main.css.map */
