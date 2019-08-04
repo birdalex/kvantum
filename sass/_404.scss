@@ -1,0 +1,24 @@
+.main404{
+	height: 450px;
+	background: url(../img/404/404.jpg) center no-repeat;
+	background-size: cover;
+	text-align: center;
+	&-title{
+		font-size: 168px;
+		color: $main-color;
+	}
+	&-subtitle{
+		color: $light-beige;
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+	&-main-text{
+		font-size: 20px;
+		font-weight: 100;
+		color: white;
+		&__link{
+			color: $main-color;
+			font-weight: 700;
+		}
+	}
+}

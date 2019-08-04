@@ -1,0 +1,31 @@
+.popular-goods{
+	margin-bottom: 30px;
+}
+.btn-popular {
+	padding: 8px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 20%;
+	background-color: $light-beige;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	&:hover {
+		background-color: $header-top-nav;
+	}
+	&__right{
+		right: -20px;
+		& img {
+			width: 10px;
+		}
+	}
+	&__left {
+		left: -20px;
+		& img {
+			width: 10px;
+			transform: rotate(180deg);
+		}
+	}
+}
+

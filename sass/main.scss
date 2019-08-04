@@ -1,16 +1,25 @@
-body {
-  min-width: 320px;
-  color: #433c3a;
-  font-family: 'Roboto Slab', serif;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1320px;
-}
 @import"resetCss";
 @import"colors";
-@import"fontello";
 @import"header";
+@import"mainSlider";
+@import"common";
+@import"popularGoods";
+@import"discountedGoods";
+@import"about";
+@import"news";
+@import"footer";
+@import"404";
+@import"categories";
 
 
+
+body {
+  min-width: 320px;
+  font-family: 'Roboto Slab', serif;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1320px;
+  width: 95%;
+}
+@import"media";

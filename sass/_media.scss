@@ -1,0 +1,94 @@
+@media (max-width: 1200px) {
+	.container {
+		max-width: 990px;
+		width: 95%;
+	}
+	.footer{
+		&-contacts a {
+			font-size: 18px;
+			padding: 10px;
+			padding-left: 0;
+		}
+		&-nav-title {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 950px) {
+	.container {
+		max-width: 580px;
+		// width: 95%;
+	}
+	.footer{
+		&-contacts-item {
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 35%;
+			flex: 0 0 35%;
+		}
+		&-logo {
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 8%;
+			flex: 0 0 8%;
+			margin-right: 40px;
+		}
+		&-nav-items{
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 35%;
+			flex: 0 0 35%;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		// max-width: 580px;
+		width: 95%;
+	}
+	.footer{
+		&-contacts {
+			display: none;
+		}
+		&-nav{
+			display: none;
+		}
+		&-mobile{
+			display: flex;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			justify-content: space-between;
+			align-items: center;
+			&-contacts{
+				display: inline-block;
+				color: $brown-main;
+				font-size: 14px;
+			}
+			&-contacts-item a {
+				display: block;
+				padding: 8px 0 12px 0;
+				color: black;
+				font-size: 16px;
+			}
+			&-logo{
+				width: 45px;
+			}
+		}
+	}
+	.social-list__item img {
+		width: 27px;
+	}
+
+	.main404-title {
+		font-size: 140px;
+	}
+	.main404-subtitle {
+		font-size: 17px;
+		margin-bottom: 35px;
+	}
+}
+
+// @media (max-width: 320px) {
+// 	.container {
+// 		width: 95%;
+// 	}
+// }
