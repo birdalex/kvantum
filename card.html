@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/slick.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Kvantum</title>
+</head>
+
+<body>
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-navigation">
+          <nav>
+            <ul class="header-top-link">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Гарантии</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header-sub">
+        <div id="burger" class="burger-menu"><span></span></div>
+        <div class="logo">
+          <a href="#"><img src="./img/logo/logo-quantum.png" alt="logo"></a>
+        </div>
+        <div class="logo-mob">
+          <img src="./img/logo/logo-quantum-mob.png" alt="logo">
+        </div>
+        <div class="form-block">
+          <a href="#" class="warranty-link">
+            <div class="warranty-block">
+              <div class="warranty-icon"></div>
+              <div class="warranty-text">Гарантия лучшие цены</div>
+            </div>
+          </a>
+          <form id="form" action="#">
+            <div class="serch">
+              <label for="input-search" class="search__icon">
+                <img src="./img/icon/search-icon.png" alt="icon-serch">
+              </label>
+              <input type="search" name="q" value="" placeholder="Поиск" class="search__input">
+              <input name="s" type="submit" value="Найти" class="search__submit">
+            </div>
+          </form>
+        </div>
+        <div class="search-icon__mob"><i class="icon-search"></i></div>
+        <div class="basket-icon__mob"><i class="icon-basket"></i></div>
+        <div class="header-contacts-block">
+          <div class="header-contacts-phone">
+            <a class="pnone-desktop" href="tel:+38093111111111">+38 (093) 123-45-67</a>
+            <a class="pnone-mob icon-phone" href="tel:+38093111111111"></a>
+          </div>
+          <div class="header-contacts-street">
+            г.Харьков ул. Квитки-Основьяненко, 3
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div id="catolog-btn" class="catalog-block">
+          <span class="burger-catalog"></span>
+          <div class="catalog-block-text">Каталог товаров</div>
+          <span id="marker-catalog" class="marker-catalog"></span>
+        </div>
+        <!-- КАТАЛОГ ТОВАРОВ -->
+        <ul class="menu-catalog">
+          <li>
+            <a href="#" class="catalog-headline__link">Системы водопровода и отпеления<span
+                class="marker-catalog__link"></span> </a>
+
+            <div class="wrapping-submenu-catalog">
+              <ul class="submenu-catalog">
+                <li class="submenu-catalog-title">Разделы</li>
+                <li><a href="#">Системы внутреннего водопровода Wavin Ekoplastik (Чехия)</a></li>
+                <li><a href="#">Запорная арматура и латунные фитинги SLOVARM (Словакия)</a></li>
+                <li><a href="#">Фитинги зажимные компрессионные для соединения труб из полиэтилена UNIDELTA
+                    (Италия)</a></li>
+                <li><a href="#">Трубы ПЭ для напорного водопровода Мпласт</a></li>
+                <li><a href="#">Хомуты для вырезки PN8, PN10, PN16 чёрные SAB (Италия)</a></li>
+                <li><a href="#">Зажимные (компрессионные) Фитинги Santehplast Украина</a></li>
+              </ul>
+            </div>
+
+
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Канализационные системы <span
+                class="marker-catalog__link"></span> </a>
+
+            <div class="wrapping-submenu-catalog">
+              <ul class="submenu-catalog">
+                <li class="submenu-catalog-title">Разделы</li>
+                <li><a href="#">Канализационная система Wavin (Нидерланды - Польша) внутренняя</a></li>
+                <li><a href="#">Канализационная система Ostendorf (Германия)</a></li>
+                <li><a href="#">Система Мпласт ПВХ (Украина) для наружной канализации</a></li>
+                <li><a href="#">Канализационная система ИНСТАЛЛПЛАСТ-ХВ (Украина) внутренняя</a></li>
+                <li><a href="#">Канализационная система Европласт (Украина) внутренняя</a></li>
+                <li><a href="#">Mcalpine</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Настенные крепления для телевизоров (KVADO)</a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Электрические обогреватели
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Капельный полив
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Dytron паяльники и насадки для пластиковых труб
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Металлические хомуты
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Теплый пол
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Люки смотровые и резиновые
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Ручной инсрумент
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Терморегуляторы
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+        </ul>
+        <!-- КАТАЛОГ ТОВАРОВ END -->
+        <div class="header-top-navigation header-top-navigation ">
+
+          <nav>
+            <ul id="mob-menu" class="header-top-link header-bottom-link">
+
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Гарантии</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="basket-block">
+          <div class="basket-block__img">
+            <img src="./img/icon/shopping-cart.png" alt="shopping-cart-icon">
+          </div>
+          <div class="basket-block__sum">1 111 <span>грн</span></div>
+          <div class="basket-block__marker"><span id="marker-basket" class="marker-basket"></span></div>
+        </div>
+        <div class="basket-block-active">
+          <span class="triangle"></span>
+          <div class="basket-list__item">
+            <div class="close-list__item"><span></span></div>
+            <a href="#" class="basket-list__img"><img src="/img/basket-img.jpg" alt=""></a>
+            <div class="basket-list__content">
+              <a href="#" class="basket-list__content-name">Гостиная Кентаки белый 1</a>
+              <a href="#" class="basket-list__content-price">1 шт на 61 920 руб.</a>
+            </div>
+          </div>
+          <div class="basket-sum">
+            <div class="basket-sum__text">Итого:</div>
+            <div class="basket-sum__num">1 123 <span class="grn">грн</span></div>
+          </div>
+          <div class="basket-btn">
+            <a class="basket-btn__one" href="#">Купить в один клик</a>
+            <a class="basket-btn__order" href="#">Оформить заказ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </header>
+  <section class="card">
+    <div class="container-card">
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Системы водопровода и отпеления</li>
+        </ul>
+      </nav>
+      <h1 class="card-title">Терморегулятор розеточный электронный Termoplaza</h1>
+      <div class="card-wrap">
+        <div class="card-foto-block">
+          <div class="card-main-foto">
+            <a data-fancybox="card-foto"
+              href="./img/cart/card-1.jpg"><img
+                class="slider-img__item" src="./img/cart/card-1.jpg"
+                alt="foto" /></a>
+          </div>
+          <div class="card-list-foto">
+            <ul class="card-list-foto ">
+              <a data-fancybox="card-foto" href="./img/cart/card-2.jpg">
+                <li class="card-foto-small"><img src="./img/cart/card-2.jpg" alt="photo">
+                </li>
+              </a>
+              <a data-fancybox="card-foto"
+                href="./img/cart/card-3.jpg">
+                <li class="card-foto-small"><img
+                    src="./img/cart/card-3.jpg" alt="photo">
+                </li>
+              </a>
+              <a data-fancybox="card-foto"
+                href="./img/cart/card-1.jpg">
+                <li class="card-foto-small"><img
+                    src="./img/cart/card-1.jpg" alt="photo">
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div class="card-description-block">
+          <div class="tabbed">
+            <input type="radio" name="tabs" id="tab-nav-1" checked>
+            <label for="tab-nav-1">Основное</label>
+            <input type="radio" name="tabs" id="tab-nav-2">
+            <label for="tab-nav-2">Описание</label>
+            <input type="radio" name="tabs" id="tab-nav-3">
+            <label for="tab-nav-3">Характеристики</label>
+            <input type="radio" name="tabs" id="tab-nav-4">
+            <label for="tab-nav-4">Оплата и Доставка</label>
+            <div class="tabs">
+              <div>
+                 <ul class="description-list">
+                   <li class="description-list__item"><span class="availability">В наличии</span></li>
+                   <li class="description-list__item"><span class="opt">Оптом и в розницу</span></li>
+                   <li class="description-list__item"><span class="price">204,29 <span
+                         class="price-grn">грн.</span></span></li>
+                   <li class="description-list__item"><span class="price-opt">Показать оптовые цены<span
+                         class="price-opt__item">195.78 грн/шт.
+                         при заказе от 6 шт.</span></span></li>
+                   <li class="description-list__item"><span class="description-item__text"></span></li>
+                 </ul>
+                  <div class="card-btn">
+                    <a class="basket-btn__one" href="#">Купить в один клик</a>
+                    <a class="basket-btn__order" href="#">В корзину</a>
+                  </div>
+              </div>
+              <div>
+                <h4 class="card-tab__des"><span class="card-title__tab">Терморегулятор розеточный электронный
+                    Termoplaza</span></h4>
+                <p>Простой, но при этом незаменимый прибор, предназначенный для совместного использования с различными
+                  видами электрообогревателей. Предназначен для поддержания заданной температуры помещения.
+                  Принцип работы розеточного электронного терморегулятора Termoplaza очень прост:
+                  Вы вставляете его в розетку, в него помещаете (включаете) вилку обогревателя (или вилку, объединяющую
+                  включение нескольких обогревателей, потому что терморегулятор целесообразно применять один на
+                  комнату). На самом регуляторе выставляете желаемую температуру и всё - наслаждаетесь комфортной
+                  температурой, а так же экономией на отоплении (до 20% за счет ограничения потребления ненужной
+                  энергии). При достижении в комнате заданной температуры терморегуляторы отключит обогреватель.
+                  Применение терморегуляторов в большей степени актуально в помещениях с полным электрическим (не
+                  водяным) отоплением. Особенно в тех случаях, когда для отопления применяются высокоэффективные
+                  конвекционно-инфракрасные электрические обогреватели Termoplaza.
+
+                  В нашем интернет-магазине и терморегулятор Termoplaza TR, и инфракрасные обогреватели
+                  Termoplaza Вы можете приобрести как по отдельности, так и более выгодными отопительными комплектами.
+
+                  Так же в нашем магазине представлены простые и доступные, но не менее эффективные и надежные
+                  механические терморегуляторы, более сложные, но и более удобные программируемые терморегуляторы, а так
+                  же терморегуляторы WI-FI с возможностью регулировки через интернет.</p>
+              </div>
+              <div>
+                <h4 class="card-tab__specifications">Основное</h4>
+                <table>
+                  <tr>
+                    <th>Производитель</th>
+                    <th>TermoPlaza</th>
+                  </tr>
+                  <tr>
+                    <th>Страна производитель</th>
+                    <th> Украина</th>
+                  </tr>
+                  <tr>
+                    <th> Минимальная температура регулирования</th>
+                    <th>-5.0 (град.)</th>
+                  </tr>
+                  <tr>
+                    <th>Максимальная температура регулирования</th>
+                    <th> 35.0 (град.)</th>
+                  </tr>
+                  <tr>
+                    <th> Вид терморегулятора</th>
+                    <th> Электронный</th>
+                  </tr>
+                  <tr>
+                    <th> Область применения терморегулятора</th>
+                    <th> Инфракрасные обогреватели</th>
+                  </tr>
+                  <tr>
+                    <th> Область применения терморегулятора</th>
+                    <th> Инфракрасные обогреватели</th>
+                  </tr>
+                  <tr>
+                    <th> Область применения терморегулятора</th>
+                    <th> Инфракрасные обогреватели</th>
+                  </tr>
+                  <tr>
+                    <th> Область применения терморегулятора</th>
+                    <th> Инфракрасные обогреватели</th>
+                  </tr>
+                </table>
+              </div>
+              <div>
+                <h4 class="card-tab__payment">Условия доставки и оплаты<span class="card-title__tab"> Терморегулятор
+                    розеточный
+                    электронный
+                    Termoplaza</span></h4>
+                    <div class="title-list-tab">Способы доставки:</div>
+                    <ul class="payment-list">
+                      <li class="payment-list__item">Самовывоз
+                        <p>Забрать свой заказ вы можете ежедневно с 8:00 до 15:00. Пожалуйста, предупредите нас заранее
+                          (хотя бы за час) о своем приезде, чтобы вы долго не ожидали свой заказ!</p>
+                      </li>
+                      <li class="payment-list__item">«Нова пошта» - Покупка без риска</li>
+                      <li class="payment-list__item">Доставка "Ин тайм"</li>
+                      <li class="payment-list__item">Доставка "Delivery"</li>
+                      <li class="payment-list__item">Meest Express</li>
+                    </ul>
+                    <div class="title-list-tab">Способы оплаты:</div>
+                    <ul class="payment-list">
+                      <li class="payment-list__item">Наложенный платеж</li>
+                      <li class="payment-list__item">Наличными</li>
+                      <li class="payment-list__item">Безналичный расчет</li>
+                      <li class="payment-list__item">Перечисление оплаты на карту Приват-Банка <p>При перечислении денег
+                          нам на карту мы добавляем к сумме 0,5% на обналичивание. Транспортные компании берут за
+                          наложенный платеж 1% (Новая Почта 2%) от общей суммы заказа, плюс они берут просто за
+                          оформление наложенного платежа около 30 грн.</p>
+                      </li>
+                    </ul>
+                    <div class="title-list-tab">Дополнительная информация о доставке и оплате:</div>
+                    <p>Уважаемые клиенты нашего магазина! Хотим донести до Вашего сведения, что отправку товара в другие
+                      регионы с помощью транспортных компаний мы можем осуществить до 13:00. Потому для тех, кто хочет
+                      оплатить товар по предварительному перечислению на банковскую карту, и если Вы желаете, чтобы мы
+                      отправили заказ в тот же день, то важно, чтобы мы получили оплату не позже 12:00. В противном
+                      случае мы отправим Вам Ваш товар на следующий день.</p><br>
+                      <p>Так же хотим обратить Ваше внимание на следующее.
+                        Если Вы хотите оплатить свой заказ предварительно на карту Приват Банка или забрать лично со
+                        склада, то в таком случае Вы можете делать заказ по телефону, а не через корзину, если Вам так
+                        удобно. Если же вы желаете, чтобы мы Вам отправили Ваш заказ по наложенному платежу, то в таком
+                        случае оформление заказа через корзину сайта обязательно!</p><br>
+                        <p class="bold-title-list">Обратите внимание!!! При покупке в нашем магазине твердотопливного
+                          котла мы осуществляем его
+                          доставку Вам до двери дома в любую точку Украины абсолютно БЕСПЛАТНО!</p>
+                    <div class="title-list-tab">Регионы доставки: </div>
+                     <ul class="payment-list">
+                       <li class="payment-list__item">Украина:
+                         <ul>
+                           <li>Винницкая область </li>
+                           <li>Волынская область </li>
+                           <li>Днепропетровская область </li>
+                           <li>Донецкая область:
+                             <ul class="sub-payment__item">
+                               <li>Бахмут </li>
+                               <li>Горловка </li>
+                               <li>Донецк </li>
+                               <li>Енакиево </li>
+                               <li>Константиновка </li>
+                               <li>Краматорск </li>
+                               <li>Макеевка </li>
+                               <li>Мариуполь </li>
+                               <li>Славянск </li>
+                             </ul> </li>
+                             <li> Житомирская область</li>
+                             <li> Закарпатская область</li>
+                             <li> Запорожская область</li>
+                             <li>Ивано-Франковская область</li>
+                             <li>Киев</li>
+                             <li>Киевская область </li>
+                             <li>Кировоградская область</li>
+                             <li>Крым</li>
+                             <li>Луганская область:
+                               <ul class="sub-payment__item">
+                                 <li>Алчевск</li>
+                                 <li>Кадиевка</li>
+                                 <li>Лисичанск</li>
+                                 <li>Луганск</li>
+                                 <li>Северодонецк</li>
+                                 <li>Хрустальный</li>
+                               </ul>
+                             </li>
+                             <li>Львовская область:
+                               <ul class="sub-payment__item">
+                                 <li>Львов</li>
+                               </ul>
+                             </li>
+                             <li> Николаевская область</li>
+                             <li>Одесская область</li>
+                             <li>Полтавская область </li>
+                             <li>Ровненская область </li>
+                             <li>Сумская область </li>
+                             <li>Тернопольская область </li>
+                             <li>Харьковская область</li>
+                             <li>Херсонская область</li>
+                             <li>Хмельницкая область</li>
+                             <li>Черкасская область </li>
+                             <li>Черниговская область</li>
+                             <li> Черновицкая область</li>
+                         </ul>
+                       </li>
+                       
+                     </ul>
+              </div>
+            </div>
+          </div>            
+      </div>
+    
+    </div>
+    
+  </section>
+  <section class="popular-goods">
+    <div class="container container-popular">
+      <h3 class="popular-goods-title title">Просмотренные товары</h3>
+      <div class="popular-goods-items good-items">
+
+        <div class="popular-goods-item good-item">
+          <div class="popular-goods__top good-card__top">
+            <div class="marker marker-sale">
+              В наличии
+            </div>
+            <div class="marker marker-action">
+              Акция
+            </div>
+          </div>
+          <div class="popular-goods__img">
+            <a href="#"> <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
+          </div>
+          <div class="popular-goods__bottom">
+            <a href="#">
+              <div class="popular-goods__bottom-header good-header">
+                труба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20
+                для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и
+                холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной
+                водытруба
+                tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной воды
+              </div>
+            </a>
+            <div class="popular-goods__bottom-price good-price">
+              Цена
+              <div class="prices-block">
+                <span class="price-now price">12 000 грн.</span>
+                <span class="price-old price">13 000 грн.</span>
+              </div>
+            </div>
+            <button class="popular-goods__bottom-btn btn-basket">
+              В корзину
+              <img src="img/icon/basket.svg" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="popular-goods-item good-item">
+          <div class="popular-goods__top good-card__top">
+            <div class="marker marker-sale">
+              В наличии
+            </div>
+            <div class="marker marker-action">
+              Акция
+            </div>
+          </div>
+          <div class="popular-goods__img">
+            <a href="#"> <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
+          </div>
+          <div class="popular-goods__bottom">
+            <a href="#">
+              <div class="popular-goods__bottom-header good-header">
+                труба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn
+                20
+                для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и
+                холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной
+                водытруба
+                tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной воды
+              </div>
+            </a>
+            <div class="popular-goods__bottom-price good-price">
+              Цена
+              <div class="prices-block">
+                <span class="price-now price">12 000 грн.</span>
+                <span class="price-old price">13 000 грн.</span>
+              </div>
+            </div>
+            <button class="popular-goods__bottom-btn btn-basket">
+              В корзину
+              <img src="img/icon/basket.svg" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="popular-goods-item good-item">
+          <div class="popular-goods__top good-card__top">
+            <div class="marker marker-sale">
+              В наличии
+            </div>
+            <div class="marker marker-action">
+              Акция
+            </div>
+          </div>
+          <div class="popular-goods__img">
+            <a href="#"> <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
+          </div>
+          <div class="popular-goods__bottom">
+            <a href="#">
+              <div class="popular-goods__bottom-header good-header">
+                труба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn
+                20
+                для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и
+                холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной
+                водытруба
+                tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной воды
+              </div>
+            </a>
+            <div class="popular-goods__bottom-price good-price">
+              Цена
+              <div class="prices-block">
+                <span class="price-now price">12 000 грн.</span>
+                <span class="price-old price">13 000 грн.</span>
+              </div>
+            </div>
+            <button class="popular-goods__bottom-btn btn-basket">
+              В корзину
+              <img src="img/icon/basket.svg" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="popular-goods-item good-item">
+          <div class="popular-goods__top good-card__top">
+            <div class="marker marker-sale">
+              В наличии
+            </div>
+            <div class="marker marker-action">
+              Акция
+            </div>
+          </div>
+          <div class="popular-goods__img">
+            <a href="#"> <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
+          </div>
+          <div class="popular-goods__bottom">
+            <a href="#">
+              <div class="popular-goods__bottom-header good-header">
+                труба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20
+                для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и
+                холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной
+                водытруба
+                tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной воды
+              </div>
+            </a>
+            <div class="popular-goods__bottom-price good-price">
+              Цена
+              <div class="prices-block">
+                <span class="price-now price">12 000 грн.</span>
+                <span class="price-old price">13 000 грн.</span>
+              </div>
+            </div>
+            <button class="popular-goods__bottom-btn btn-basket">
+              В корзину
+              <img src="img/icon/basket.svg" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="popular-goods-item good-item">
+          <div class="popular-goods__top good-card__top">
+            <div class="marker marker-sale">
+              В наличии
+            </div>
+            <div class="marker marker-action">
+              Акция
+            </div>
+          </div>
+          <div class="popular-goods__img">
+            <a href="#"> <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
+          </div>
+          <div class="popular-goods__bottom">
+            <a href="#">
+              <div class="popular-goods__bottom-header good-header">
+                труба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20
+                для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и
+                холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной
+                водытруба
+                tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной воды
+              </div>
+            </a>
+            <div class="popular-goods__bottom-price good-price">
+              Цена
+              <div class="prices-block">
+                <span class="price-now price">12 000 грн.</span>
+                <span class="price-old price">13 000 грн.</span>
+              </div>
+            </div>
+            <button class="popular-goods__bottom-btn btn-basket">
+              В корзину
+              <img src="img/icon/basket.svg" alt="">
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-contacts">
+        <div class="footer-contacts-item footer-logo">
+          <img src="img/footer/footer_logo.png" alt="">
+        </div>
+        <div class="footer-contacts-item footer-phone">
+          Телефон:
+          <a href="tel:+37 (ХХ) ХХХ ХХХ">+37 (ХХ) ХХХ ХХХ</a>
+        </div>
+        <div class="footer-contacts-item footer-mail">
+          E-mail:
+          <a href="mailto:santeh_gold@gmail.com">santeh_gold@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-social">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="#" class="social-item__link">
+                <img src="img/social/facebook.svg">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-item__link">
+                <img src="img/social/instagram.svg">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-item__link">
+                <img src="img/social/vk.svg">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-lists__item footer-nav-items">
+          <h3 class="footer-nav-title">
+            О компании
+          </h3>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Контакты
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Гарантия и возврат
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Гарантия цены
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Гарантия качества
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-lists__item footer-nav-items">
+          <h3 class="footer-nav-title">
+            Разделы
+          </h3>
+
+          <ul class="footer-nav-list footer-nav-item">
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Распродажа
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Скидки и акции
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Оплата
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Отзывы
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="footer-lists__item footer-nav-items">
+            <h3 class="footer-nav-title">
+              Новости
+            </h3>
+          </div> -->
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="copyright">
+          @ Магазин сантехники "СантехГолд"
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="/js/jquery-3.3.1.min.js"><\/script>')
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src="./js/jquery.zoom.min.js"></script>
+  <script src="./js/jquery.maskedinput.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./slick/slick.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/slider.js"></script>
+</body>
+
+</html>

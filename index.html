@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/css/slick.css">
-  <link rel="stylesheet" type="text/css" href="/css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Kvantum</title>
 </head>
 <body>
+  <!-- ШАПКА -->
   <header class="header">
     <div class="header-top">
       <div class="container">
@@ -27,9 +28,16 @@
             </ul>
           </nav>
         </div>
+      </div>
+    </div>
+      <div class="container">
         <div class="header-sub">
+          <div id="burger" class="burger-menu"><span></span></div>
           <div class="logo">
-            <a href="#"><img src="/img/logo/logo-quantum.png" alt="logo"></a>
+            <a href="#"><img src="./img/logo/logo-quantum.png" alt="logo"></a>
+          </div>
+          <div class="logo-mob">
+            <img src="./img/logo/logo-quantum-mob.png" alt="logo">
           </div>
           <div class="form-block">
             <a href="#" class="warranty-link">
@@ -41,16 +49,19 @@
             <form id="form" action="#">
               <div class="serch">
                 <label for="input-search" class="search__icon">
-                  <img src="/img/icon/search-icon.png" alt="icon-serch">
+                  <img src="./img/icon/search-icon.png" alt="icon-serch">
                 </label>
                 <input type="search" name="q" value="" placeholder="Поиск" class="search__input">
                 <input name="s" type="submit" value="Найти" class="search__submit">
               </div>
             </form>
           </div>
+          <div  class="search-icon__mob"><i class="icon-search"></i></div>
+          <div  class="basket-icon__mob"><i class="icon-basket"></i></div>
           <div class="header-contacts-block">
             <div class="header-contacts-phone">
-              <a href="tel:+38093111111111">+38 (093) 123-45-67</a>
+              <a class="pnone-desktop" href="tel:+38093111111111">+38 (093) 123-45-67</a>
+              <a class="pnone-mob icon-phone" href="tel:+38093111111111"></a>
             </div>
             <div class="header-contacts-street">
               г.Харьков ул. Квитки-Основьяненко, 3
@@ -66,8 +77,8 @@
           <!-- КАТАЛОГ ТОВАРОВ -->
           <ul class="menu-catalog">
             <li>
-              <a href="#" class="catalog-headline__link">Системы водопровода и отпеления <span
-                  class="marker-catalog__link"></span></a>
+              <a href="#" class="catalog-headline__link">Системы водопровода и отпеления<span class="marker-catalog__link"></span> </a>
+             
               <div class="wrapping-submenu-catalog">
                 <ul class="submenu-catalog">
                   <li class="submenu-catalog-title">Разделы</li>
@@ -80,23 +91,23 @@
                   <li><a href="#">Зажимные (компрессионные) Фитинги Santehplast Украина</a></li>
                 </ul>
               </div>
-              
-              
+        
+        
             </li>
             <li>
-              <a href="#" class="catalog-headline__link">Канализационные системы <span
-                  class="marker-catalog__link"></span></a>
-               <div class="wrapping-submenu-catalog">
-                 <ul class="submenu-catalog">
-                   <li class="submenu-catalog-title">Разделы</li>
-                   <li><a href="#">Канализационная система Wavin (Нидерланды - Польша) внутренняя</a></li>
-                   <li><a href="#">Канализационная система Ostendorf (Германия)</a></li>
-                   <li><a href="#">Система Мпласт ПВХ (Украина) для наружной канализации</a></li>
-                   <li><a href="#">Канализационная система ИНСТАЛЛПЛАСТ-ХВ (Украина) внутренняя</a></li>
-                   <li><a href="#">Канализационная система Европласт (Украина) внутренняя</a></li>
-                   <li><a href="#">Mcalpine</a></li>
-                 </ul>
-               </div>
+              <a href="#" class="catalog-headline__link">Канализационные системы <span class="marker-catalog__link"></span> </a>
+             
+              <div class="wrapping-submenu-catalog">
+                <ul class="submenu-catalog">
+                  <li class="submenu-catalog-title">Разделы</li>
+                  <li><a href="#">Канализационная система Wavin (Нидерланды - Польша) внутренняя</a></li>
+                  <li><a href="#">Канализационная система Ostendorf (Германия)</a></li>
+                  <li><a href="#">Система Мпласт ПВХ (Украина) для наружной канализации</a></li>
+                  <li><a href="#">Канализационная система ИНСТАЛЛПЛАСТ-ХВ (Украина) внутренняя</a></li>
+                  <li><a href="#">Канализационная система Европласт (Украина) внутренняя</a></li>
+                  <li><a href="#">Mcalpine</a></li>
+                </ul>
+              </div>
             </li>
             <li>
               <a href="#" class="catalog-headline__link">Настенные крепления для телевизоров (KVADO)</a>
@@ -117,65 +128,69 @@
               <a href="#" class="catalog-headline__link">Металлические хомуты
                 <!-- <span class="marker-catalog__link"></span> --></a>
             </li>
-            <li>              
+            <li>
               <a href="#" class="catalog-headline__link">Теплый пол
                 <!-- <span class="marker-catalog__link"></span> --></a>
             </li>
-            <li>             
+            <li>
               <a href="#" class="catalog-headline__link">Люки смотровые и резиновые
                 <!-- <span class="marker-catalog__link"></span> --></a>
             </li>
-            <li>             
+            <li>
               <a href="#" class="catalog-headline__link">Ручной инсрумент
                 <!-- <span class="marker-catalog__link"></span> --></a>
             </li>
-            <li>            
+            <li>
               <a href="#" class="catalog-headline__link">Терморегуляторы
                 <!-- <span class="marker-catalog__link"></span> --></a>
             </li>
           </ul>
-           <!-- КАТАЛОГ ТОВАРОВ END -->
-           <div class="header-top-navigation header-top-navigation ">
-             <nav>
-               <ul class="header-top-link header-bottom-link">
-                 <li><a href="#">О компании</a></li>
-                 <li><a href="#">Доставка</a></li>
-                 <li><a href="#">Оплата</a></li>
-                 <li><a href="#">Гарантии</a></li>
-                 <li><a href="#">Акции</a></li>
-                 <li><a href="#">Контакты</a></li>
-               </ul>
-             </nav>
-           </div>
-           <div class="basket-block">
+          <!-- КАТАЛОГ ТОВАРОВ END -->
+          <div class="header-top-navigation header-top-navigation ">
+            
+            <nav>
+              <ul id="mob-menu" class="header-top-link header-bottom-link">
+                
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Гарантии</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="basket-block">
             <div class="basket-block__img">
-              <img src="/img/icon/shopping-cart.png" alt="shopping-cart-icon">
+              <img src="./img/icon/shopping-cart.png" alt="shopping-cart-icon">
             </div>
             <div class="basket-block__sum">1 111 <span>грн</span></div>
             <div class="basket-block__marker"><span id="marker-basket" class="marker-basket"></span></div>
-           </div>
-           <div class="basket-block-active">
-             <span class="triangle"></span>
-             <div class="basket-list__item">
-               <div class="close-list__item"><span></span></div>
-               <a href="#" class="basket-list__img"><img src="/img/basket-img.jpg" alt=""></a>
-               <div class="basket-list__content">
-                 <a href="#" class="basket-list__content-name">Гостиная Кентаки белый 1</a>
-                 <a href="#" class="basket-list__content-price">1 шт на 61 920 руб.</a>
-               </div>
-             </div>
-             <div class="basket-sum">
-               <div class="basket-sum__text">Итого:</div>
-               <div class="basket-sum__num">1 123 <span class="grn">грн</span></div>
-             </div>
-             <div class="basket-btn">
-               <a class="basket-btn__one" href="#">Купить в один клик</a>
-               <a class="basket-btn__order" href="#">Оформить заказ</a>
-             </div>
-           </div>
+          </div>
+          <div class="basket-block-active">
+            <span class="triangle"></span>
+            <div class="basket-list__item">
+              <div class="close-list__item"><span></span></div>
+              <a href="#" class="basket-list__img"><img src="/img/basket-img.jpg" alt=""></a>
+              <div class="basket-list__content">
+                <a href="#" class="basket-list__content-name">Гостиная Кентаки белый 1</a>
+                <a href="#" class="basket-list__content-price">1 шт на 61 920 руб.</a>
+              </div>
+            </div>
+            <div class="basket-sum">
+              <div class="basket-sum__text">Итого:</div>
+              <div class="basket-sum__num">1 123 <span class="grn">грн</span></div>
+            </div>
+            <div class="basket-btn">
+              <a class="basket-btn__one" href="#">Купить в один клик</a>
+              <a class="basket-btn__order" href="#">Оформить заказ</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+        
+      </div>
+ 
   </header>
   <section class="main-slider">
     <div class="container">
@@ -190,7 +205,7 @@
           </div>
           <img src="img/main-slider/1.jpg" alt="">
         </div>
-
+  
         <div class="main-slider-item">
           <div class="main-slider-descr">
             <h1 class="main-slider-title">Новые коллекции напольной плитки</h1>
@@ -201,7 +216,7 @@
           </div>
           <img src="img/main-slider/2.jpg" alt="">
         </div>
-
+  
         <div class="main-slider-item">
           <div class="main-slider-descr">
             <h1 class="main-slider-title">Новые коллекции напольной плитки</h1>
@@ -213,15 +228,26 @@
           <img src="img/main-slider/3.jpg" alt="">
         </div>
       </div>
+  
+      <div class="main-slider-descr-mobile">
+        <div class="main-slider-descr">
+          <h1 class="main-slider-title">Новые коллекции напольной плитки</h1>
+          <div class="main-slider-subtitle">
+            Выбирайте
+            <a href="#">на сайте</a>
+          </div>
+        </div>
+      </div>
+  
     </div>
   </section>
   <section class="categories">
     <div class="container">
       <h3 class="categories-title title">Категории</h3>
       <div class="categories-items">
-
+  
         <div class="categories-items__top categories-items__top-left">
-
+  
           <div class="categories-item">
             <a href="#">
               <div class="h185">
@@ -232,7 +258,7 @@
               </div>
             </a>
           </div>
-
+  
           <div class="categories-item">
             <a href="#">
               <div class="h185">
@@ -243,22 +269,21 @@
               </div>
             </a>
           </div>
-
+  
         </div>
-
+  
         <div class="categories-items__top categories-items__top-center">
           <div class="categories-item categories-item-bg">
             <a href="#">
               <div class="h386">
                 <div class="categories-item-text">
-                  <!-- <img class="categories-item-img" src="img/categories/1.svg"> -->
                   <span class="categories-item-descr">Твердотопливные котлы</span>
                 </div>
               </div>
             </a>
           </div>
         </div>
-
+  
         <div class="categories-items__top categories-items__top-right">
           <div class="categories-item categories-item-bg categories-item-bg-big">
             <a href="#">
@@ -270,7 +295,8 @@
             </a>
           </div>
         </div>
-
+      </div>
+        <div class="categories-items">
         <div class="categories-items__bottom categories-items__bottom-left">
           <div class="categories-item categories-item-bg">
             <a href="#">
@@ -282,11 +308,11 @@
             </a>
           </div>
         </div>
-
+  
         <div class="categories-items__bottom categories-items__bottom-right">
-
+  
           <div class="categories-items__bottom-small">
-
+  
             <div class="categories-item categories-item-small">
               <a href="#">
                 <div class="h185">
@@ -297,7 +323,7 @@
                 </div>
               </a>
             </div>
-
+  
             <div class="categories-item categories-item-small">
               <a href="#">
                 <div class="h185">
@@ -308,8 +334,8 @@
                 </div>
               </a>
             </div>
-
-
+  
+  
             <div class="categories-item categories-item-small">
               <a href="#">
                 <div class="h185">
@@ -320,7 +346,7 @@
                 </div>
               </a>
             </div>
-
+  
             <div class="categories-item categories-item-small">
               <a href="#">
                 <div class="h185">
@@ -331,7 +357,7 @@
                 </div>
               </a>
             </div>
-
+  
             <div class="categories-item categories-item-small">
               <a href="#">
                 <div class="h185">
@@ -342,7 +368,7 @@
                 </div>
               </a>
             </div>
-
+  
             <div class="categories-item categories-item-small">
               <a href="#">
                 <div class="h185">
@@ -353,20 +379,20 @@
                 </div>
               </a>
             </div>
-
+  
           </div>
-
+  
         </div>
-
+  
       </div>
     </div>
   </section>
-
+  
   <section class="popular-goods">
-    <div class="container">
+    <div class="container container-popular">
       <h3 class="popular-goods-title title">Популярные товары</h3>
       <div class="popular-goods-items good-items">
-
+  
         <div class="popular-goods-item good-item">
           <div class="popular-goods__top good-card__top">
             <div class="marker marker-sale">
@@ -377,15 +403,15 @@
             </div>
           </div>
           <div class="popular-goods__img">
-            <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt="">
+           <a href="#"> <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
           </div>
           <div class="popular-goods__bottom">
-            <div class="popular-goods__bottom-header good-header">
+            <a href="#"><div class="popular-goods__bottom-header good-header">
               труба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20
               для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и
               холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба
               tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной воды
-            </div>
+            </div></a>
             <div class="popular-goods__bottom-price good-price">
               Цена
               <div class="prices-block">
@@ -399,7 +425,80 @@
             </button>
           </div>
         </div>
-
+  
+         <div class="popular-goods-item good-item">
+           <div class="popular-goods__top good-card__top">
+             <div class="marker marker-sale">
+               В наличии
+             </div>
+             <div class="marker marker-action">
+               Акция
+             </div>
+           </div>
+           <div class="popular-goods__img">
+             <a href="#"> <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
+           </div>
+           <div class="popular-goods__bottom">
+             <a href="#">
+               <div class="popular-goods__bottom-header good-header">
+                 труба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn
+                 20
+                 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и
+                 холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной
+                 водытруба
+                 tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной воды
+               </div>
+             </a>
+             <div class="popular-goods__bottom-price good-price">
+               Цена
+               <div class="prices-block">
+                 <span class="price-now price">12 000 грн.</span>
+                 <span class="price-old price">13 000 грн.</span>
+               </div>
+             </div>
+             <button class="popular-goods__bottom-btn btn-basket">
+               В корзину
+               <img src="img/icon/basket.svg" alt="">
+             </button>
+           </div>
+         </div>
+         <div class="popular-goods-item good-item">
+           <div class="popular-goods__top good-card__top">
+             <div class="marker marker-sale">
+               В наличии
+             </div>
+             <div class="marker marker-action">
+               Акция
+             </div>
+           </div>
+           <div class="popular-goods__img">
+             <a href="#"> <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
+           </div>
+           <div class="popular-goods__bottom">
+             <a href="#">
+               <div class="popular-goods__bottom-header good-header">
+                 труба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn
+                 20
+                 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и
+                 холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной
+                 водытруба
+                 tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной воды
+               </div>
+             </a>
+             <div class="popular-goods__bottom-price good-price">
+               Цена
+               <div class="prices-block">
+                 <span class="price-now price">12 000 грн.</span>
+                 <span class="price-old price">13 000 грн.</span>
+               </div>
+             </div>
+             <button class="popular-goods__bottom-btn btn-basket">
+               В корзину
+               <img src="img/icon/basket.svg" alt="">
+             </button>
+           </div>
+         </div>
+  
         <div class="popular-goods-item good-item">
           <div class="popular-goods__top good-card__top">
             <div class="marker marker-sale">
@@ -410,12 +509,18 @@
             </div>
           </div>
           <div class="popular-goods__img">
-            <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt="">
+            <a href="#"> <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
           </div>
           <div class="popular-goods__bottom">
-            <div class="popular-goods__bottom-header good-header">
-              труба tebo pn 20 для горячей и холодной воды
-            </div>
+            <a href="#">
+              <div class="popular-goods__bottom-header good-header">
+                труба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20
+                для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и
+                холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной
+                водытруба
+                tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной воды
+              </div>
+            </a>
             <div class="popular-goods__bottom-price good-price">
               Цена
               <div class="prices-block">
@@ -429,7 +534,7 @@
             </button>
           </div>
         </div>
-
+  
         <div class="popular-goods-item good-item">
           <div class="popular-goods__top good-card__top">
             <div class="marker marker-sale">
@@ -440,12 +545,15 @@
             </div>
           </div>
           <div class="popular-goods__img">
-            <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt="">
+           <a href="#"> <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
           </div>
           <div class="popular-goods__bottom">
-            <div class="popular-goods__bottom-header good-header">
-              труба tebo pn 20 для горячей и холодной воды
-            </div>
+            <a href="#"><div class="popular-goods__bottom-header good-header">
+              труба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20
+              для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и
+              холодной водытруба tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной водытруба
+              tebo pn 20 для горячей и холодной водытруба tebo pn 20 для горячей и холодной воды
+            </div></a>
             <div class="popular-goods__bottom-price good-price">
               Цена
               <div class="prices-block">
@@ -459,76 +567,16 @@
             </button>
           </div>
         </div>
-
-        <div class="popular-goods-item good-item">
-          <div class="popular-goods__top good-card__top">
-            <div class="marker marker-sale">
-              В наличии
-            </div>
-            <div class="marker marker-action">
-              Акция
-            </div>
-          </div>
-          <div class="popular-goods__img">
-            <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt="">
-          </div>
-          <div class="popular-goods__bottom">
-            <div class="popular-goods__bottom-header good-header">
-              труба tebo pn 20 для горячей и холодной воды
-            </div>
-            <div class="popular-goods__bottom-price good-price">
-              Цена
-              <div class="prices-block">
-                <span class="price-now price">12 000 грн.</span>
-                <span class="price-old price">13 000 грн.</span>
-              </div>
-            </div>
-            <button class="popular-goods__bottom-btn btn-basket">
-              В корзину
-              <img src="img/icon/basket.svg" alt="">
-            </button>
-          </div>
-        </div>
-
-        <div class="popular-goods-item good-item">
-          <div class="popular-goods__top good-card__top">
-            <div class="marker marker-sale">
-              В наличии
-            </div>
-            <div class="marker marker-action">
-              Акция
-            </div>
-          </div>
-          <div class="popular-goods__img">
-            <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt="">
-          </div>
-          <div class="popular-goods__bottom">
-            <div class="popular-goods__bottom-header good-header">
-              труба tebo pn 20 для горячей и холодной воды
-            </div>
-            <div class="popular-goods__bottom-price good-price">
-              Цена
-              <div class="prices-block">
-                <span class="price-now price">12 000 грн.</span>
-                <span class="price-old price">13 000 грн.</span>
-              </div>
-            </div>
-            <button class="popular-goods__bottom-btn btn-basket">
-              В корзину
-              <img src="img/icon/basket.svg" alt="">
-            </button>
-          </div>
-        </div>
-
+  
       </div>
     </div>
   </section>
-
+  
   <section class="discounted-goods">
-    <div class="container">
+    <div class="container container-discounted">
       <h2 class="discounted-goods-title title">Товары со скидкой</h2>
       <div class="discounted-goods-items good-items">
-
+  
         <div class="discounted-goods-item good-item">
           <div class="discounted-goods__top good-card__top">
             <div class="marker marker-sale">
@@ -539,12 +587,12 @@
             </div>
           </div>
           <div class="discounted-goods__img">
-            <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt="">
+            <a href="#"><img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
           </div>
           <div class="discounted-goods__bottom">
-            <div class="discounted-goods__bottom-header good-header">
+            <a href="#"><div class="discounted-goods__bottom-header good-header">
               труба tebo pn 20 для горячей и холодной воды
-            </div>
+            </div></a>
             <div class="discounted-goods__bottom-price good-price">
               Цена
               <div class="prices-block">
@@ -558,7 +606,7 @@
             </button>
           </div>
         </div>
-
+  
         <div class="discounted-goods-item good-item">
           <div class="discounted-goods__top good-card__top">
             <div class="marker marker-sale">
@@ -569,12 +617,14 @@
             </div>
           </div>
           <div class="discounted-goods__img">
-            <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt="">
+            <a href="#"><img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
           </div>
           <div class="discounted-goods__bottom">
-            <div class="discounted-goods__bottom-header good-header">
-              труба tebo pn 20 для горячей и холодной воды
-            </div>
+            <a href="#">
+              <div class="discounted-goods__bottom-header good-header">
+                труба tebo pn 20 для горячей и холодной воды
+              </div>
+            </a>
             <div class="discounted-goods__bottom-price good-price">
               Цена
               <div class="prices-block">
@@ -588,7 +638,7 @@
             </button>
           </div>
         </div>
-
+  
         <div class="discounted-goods-item good-item">
           <div class="discounted-goods__top good-card__top">
             <div class="marker marker-sale">
@@ -599,12 +649,14 @@
             </div>
           </div>
           <div class="discounted-goods__img">
-            <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt="">
+            <a href="#"><img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
           </div>
           <div class="discounted-goods__bottom">
-            <div class="discounted-goods__bottom-header good-header">
-              труба tebo pn 20 для горячей и холодной воды
-            </div>
+            <a href="#">
+              <div class="discounted-goods__bottom-header good-header">
+                труба tebo pn 20 для горячей и холодной воды
+              </div>
+            </a>
             <div class="discounted-goods__bottom-price good-price">
               Цена
               <div class="prices-block">
@@ -618,7 +670,7 @@
             </button>
           </div>
         </div>
-
+  
         <div class="discounted-goods-item good-item">
           <div class="discounted-goods__top good-card__top">
             <div class="marker marker-sale">
@@ -629,12 +681,14 @@
             </div>
           </div>
           <div class="discounted-goods__img">
-            <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt="">
+            <a href="#"><img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
           </div>
           <div class="discounted-goods__bottom">
-            <div class="discounted-goods__bottom-header good-header">
-              труба tebo pn 20 для горячей и холодной воды
-            </div>
+            <a href="#">
+              <div class="discounted-goods__bottom-header good-header">
+                труба tebo pn 20 для горячей и холодной воды
+              </div>
+            </a>
             <div class="discounted-goods__bottom-price good-price">
               Цена
               <div class="prices-block">
@@ -648,7 +702,7 @@
             </button>
           </div>
         </div>
-
+  
         <div class="discounted-goods-item good-item">
           <div class="discounted-goods__top good-card__top">
             <div class="marker marker-sale">
@@ -659,12 +713,14 @@
             </div>
           </div>
           <div class="discounted-goods__img">
-            <img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt="">
+            <a href="#"><img class="good-img" src="img/popular/85866785_truba-110h27h2000-pvh.jpg" alt=""></a>
           </div>
           <div class="discounted-goods__bottom">
-            <div class="discounted-goods__bottom-header good-header">
-              труба tebo pn 20 для горячей и холодной воды
-            </div>
+            <a href="#">
+              <div class="discounted-goods__bottom-header good-header">
+                труба tebo pn 20 для горячей и холодной воды
+              </div>
+            </a>
             <div class="discounted-goods__bottom-price good-price">
               Цена
               <div class="prices-block">
@@ -681,7 +737,7 @@
       </div>
     </div>
   </section>
-
+  
   <section class="about">
     <div class="container">
       <h3 class="about-title">"СантехГолд" - интернет магазин сантехники в Харькове</h3>
@@ -705,11 +761,11 @@
       <a href="#" class="more">подробнее</a>
     </div>
   </section>
-
+  
   <section class="news">
     <div class="container">
       <div class="news-wrap">
-
+  
         <div class="news-left">
           <h2 class="news-title">Новости</h2>
           <div class="news-subtitle">
@@ -720,7 +776,7 @@
             Все новости
           </button>
         </div>
-
+  
         <a href="#" class="news-item news-item__big">
           <div class="news-item-text">
             <h4 class="news-item-title">
@@ -729,7 +785,7 @@
             <span class="news-item-data">27.04.2019</span>
           </div>
         </a>
-
+  
         <div class="news-right">
           <a href="" class="news-item">
             <div class="news-item-text">
@@ -739,7 +795,7 @@
               <span class="news-item-data">27.04.2019</span>
             </div>
           </a>
-
+  
           <a href="" class="news-item">
             <div class="news-item-text">
               <h4 class="news-item-title">
@@ -749,11 +805,11 @@
             </div>
           </a>
         </div>
-
+  
       </div>
     </div>
   </section>
-
+  
   <footer class="footer">
     <div class="container">
       <div class="footer-contacts">
@@ -769,7 +825,7 @@
           <a href="mailto:santeh_gold@gmail.com">santeh_gold@gmail.com</a>
         </div>
       </div>
-
+  
       <div class="footer-nav">
         <div class="footer-social">
           <ul class="social-list">
@@ -790,12 +846,12 @@
             </li>
           </ul>
         </div>
-
+  
         <div class="footer-lists__item footer-nav-items">
           <h3 class="footer-nav-title">
             О компании
           </h3>
-
+  
           <ul class="footer-nav-list">
             <li class="footer-nav-item">
               <a href="#" class="footer-nav-item__link">
@@ -819,12 +875,12 @@
             </li>
           </ul>
         </div>
-
+  
         <div class="footer-lists__item footer-nav-items">
           <h3 class="footer-nav-title">
             Разделы
           </h3>
-
+  
           <ul class="footer-nav-list footer-nav-item">
             <li class="footer-nav-item">
               <a href="#" class="footer-nav-item__link">
@@ -848,12 +904,12 @@
             </li>
           </ul>
         </div>
-
-        <div class="footer-lists__item footer-nav-items">
-          <h3 class="footer-nav-title">
-            Новости
-          </h3>
-        </div>
+  
+        <!-- <div class="footer-lists__item footer-nav-items">
+            <h3 class="footer-nav-title">
+              Новости
+            </h3>
+          </div> -->
       </div>
     </div>
     <div class="footer-bottom">
@@ -867,10 +923,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/js/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-  <script src="/js/jquery.maskedinput.min.js"></script>
-  <script src="/js/jquery.validate.min.js"></script>
-  <script src="/slick/slick.min.js"></script>
-  <script src="/js/script.js"></script>
-   <script src="js/slider.js"></script>
+  <script src="./js/jquery.zoom.min.js"></script>
+  <script src="./js/jquery.maskedinput.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./slick/slick.min.js"></script>
+  <script src="./js/script.js"></script>
+   <script src="./js/slider.js"></script>
 </body>
 </html>
