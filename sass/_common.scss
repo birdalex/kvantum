@@ -10,7 +10,7 @@ button{
 	&-header {
 		margin-bottom: 18px;
 		text-transform: uppercase;
-		color: $light-beige;
+		color: $card-title;
 		font-size: 14px;
 		position: relative;
 		margin: 0;
@@ -20,7 +20,7 @@ button{
 	}
 	&-price {
 		margin-top: 10px;
-		color: $light-beige;
+		color:#717171;
 		font-size: 14px;
 	}
 	&-img {
@@ -32,17 +32,19 @@ button{
 	}
 	&-item {
 		flex-direction: column;
-		border: 1px solid $light-beige;
+		border:1px solid #e8e6e3;;
 		padding: 10px;
 		margin: 20px;
 		outline: none;
+		border-radius: 5px;
 		&:hover {
-			box-shadow: 0 20px 30px 0 rgba(79, 45, 0, 0.1), 0 7px 30px 0 rgba(79, 45, 0, 0.1);
+			box-shadow: 0px 9px 14px -4px rgba(0, 0, 0, 0.75);
+			// box-shadow: 0 20px 30px 0 rgba(79, 45, 0, 0.1), 0 7px 30px 0 rgba(79, 45, 0, 0.1);
 			-webkit-transition: -webkit-box-shadow .7s;
 			transition: -webkit-box-shadow .7s;
-			transition: box-shadow .7s;
-			transition: box-shadow .7s,
-				-webkit-box-shadow .7s;
+			// transition: box-shadow .7s;
+			transition: box-shadow .2s,
+				-webkit-box-shadow .2s;
 		}
 	}
 	&-card {
@@ -63,6 +65,7 @@ button{
 	&-sale {
 		background-color: $green-common;
 		margin-right: 10px;
+		display: none;
 	}
 	&-action {
 		background-color: $red-common;
@@ -76,7 +79,7 @@ button{
 .price{
 	&-now {
 		font-size: 18px;
-		background-color: $light-beige;
+		background-color: $main-color;
 		color: white;
 		padding: 0 5px;
 		margin-right: 8px;

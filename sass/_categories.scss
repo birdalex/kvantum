@@ -1,53 +1,61 @@
-.categories{
-	&-items{
+.categories {
+	margin-bottom: 45px;
+
+	&-items {
 		display: flex;
 		flex-wrap: wrap;
-		// margin-right: -8px;
-		// margin-left: -8px;
+
 		&__top {
 			position: relative;
 			width: 100%;
 			min-height: 1px;
 			padding-right: 8px;
 			padding-left: 8px;
+
 			&-left {
 				-webkit-box-flex: 0;
 				-ms-flex: 0 0 27%;
 				flex: 0 0 27%;
 				max-width: 27%;
 			}
+
 			&-center {
 				-webkit-box-flex: 0;
 				-ms-flex: 0 0 25%;
-				flex: 0 0 25%;
+				flex: 0 0 24%;
 				max-width: 25%;
 			}
-			&-right{
+
+			&-right {
 				-webkit-box-flex: 0;
 				-ms-flex: 0 0 48%;
 				flex: 0 0 48%;
 				max-width: 48%;
-			}	
+			}
 		}
+
 		&__bottom {
 			position: relative;
 			width: 100%;
 			min-height: 1px;
 			padding-right: 8px;
 			padding-left: 8px;
-			&-left{
+
+			&-left {
 				-webkit-box-flex: 0;
 				-ms-flex: 0 0 27%;
 				flex: 0 0 27%;
 				max-width: 27%;
 			}
-			&-right{
+
+			&-right {
 				-webkit-box-flex: 0;
 				-ms-flex: 0 0 73%;
 				flex: 0 0 73%;
 				max-width: 73%;
 			}
-			&-small{
+
+			&-small {
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
@@ -55,19 +63,27 @@
 				flex-wrap: wrap;
 				margin-right: -8px;
 				margin-left: -8px;
+				justify-content: space-around;
 			}
 		}
 	}
+
 	&-item {
 		background: $light-beige;
 		border-radius: 3px;
 		margin-bottom: 16px;
 		position: relative;
 		overflow: hidden;
+
+		&:hover {
+			background-color: darken($light-beige, 5%);
+		}
+
 		&-bg {
 			position: relative;
 			background: url(../img/categories/boiler.jpg) no-repeat;
 			background-size: cover;
+
 			&::before {
 				content: '';
 				display: block;
@@ -79,12 +95,18 @@
 				background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10% rgba(255, 255, 255, 1) 30%, rgba(229, 210, 196, 1) 63%, rgba(229, 210, 196, 1) 100%);
 				z-index: 0;
 			}
-			&-big{
+
+			&:hover::before {
+				background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10% rgba(255, 255, 255, 1) 30%, darken(rgb(229, 210, 196), 5%) 63%, darken(rgb(229, 210, 196), 5%) 100%);
+			}
+
+			&-big {
 				background: url(../img/categories/gutter_system.jpg) no-repeat;
 				background-size: cover;
 			}
 		}
-		&-text{
+
+		&-text {
 			position: relative;
 			z-index: 1;
 			padding: 25px 18px;
@@ -99,33 +121,49 @@
 			flex-direction: column;
 			justify-content: flex-end;
 		}
-		&-img{
+
+		&-img {
 			width: 80px;
 			margin-bottom: 10px;
 		}
-		&-descr{
+
+		&-descr {
 			width: 70%;
 			color: #433e3d;
 			font-weight: 700;
 			text-transform: uppercase;
 		}
+
+		&-small {
+			position: relative;
+			width: 100%;
+			min-height: 1px;
+			margin-right: 8px;
+			margin-left: 8px;
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 31%;
+			flex: 0 0 31%;
+			max-width: 31%;
+		}
 	}
 
 }
-.categories-item-small {
-	position: relative;
-	width: 100%;
-	min-height: 1px;
-	margin-right: 8px;
-	margin-left: 8px;
-	-webkit-box-flex: 0;
-	-ms-flex: 0 0 31.6%;
-	flex: 0 0 31.6%;
-	max-width: 31.6%;
-}
+
+// .categories-item-small {
+// 	position: relative;
+// 	width: 100%;
+// 	min-height: 1px;
+// 	margin-right: 8px;
+// 	margin-left: 8px;
+// 	-webkit-box-flex: 0;
+// 	-ms-flex: 0 0 31.6%;
+// 	flex: 0 0 31.6%;
+// 	max-width: 31.6%;
+// }
 .h185 {
 	height: 185px;
 }
-.h386{
+
+.h386 {
 	height: 386px;
 }

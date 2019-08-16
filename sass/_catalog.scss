@@ -1,0 +1,224 @@
+ 
+ .catalog{
+ .catalog-title {
+   font-size: 28px;
+   line-height: 36px;
+   margin-top: 15px;
+   color: #433f3e;
+   margin-bottom: 35px;
+ }
+.wrap-catalog{
+ display: flex;
+}
+.catalog-filter__block{
+  width: 290px;
+  display: flex;
+}
+.catalog-filter__btn{
+  position: relative;
+  width: 100%;
+  height:50px;
+  border: 2px solid $main-btn;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height:50px;
+  font-size: 20px;
+  font-weight: 700;  
+  color: #433f3e;
+  cursor: pointer;
+   span {
+
+     &:before,
+     &:after {
+       position: absolute;
+       content: '';
+       width: 10px;
+       height: 2px;
+       right: 4%;
+       top: 42%;
+       background-color: #000;
+       transition: transform 250ms ease;
+     }
+
+     &:before {
+       transform: translate(-3px, 4px) rotate(45deg);
+     }
+
+     &:after {
+       transform: translate(3px, 4px) rotate(-45deg);
+     }
+   }
+
+   &-active {
+     margin-bottom: 15px;
+
+     span {
+
+       &:before,
+       &:after {
+         position: absolute;
+         content: '';
+         width: 10px;
+         height: 2px;
+         right: 4%;
+         top: 17px;
+         transition: transform 250ms ease;
+       }
+
+       &:before {
+         transform: translate(-3px, 4px) rotate(-45deg);
+       }
+
+       &:after {
+         transform: translate(3px, 4px) rotate(45deg);
+       }
+
+     }
+   }
+}
+  .wrap-products{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    justify-content: space-between;
+  }
+  .card-sort{
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  .sort-list{
+    margin-left: 20px;
+    display: flex;
+     color: #433f3e;
+    .sort-item{
+      display: flex;
+      margin-left: 5px;
+      align-items: center;
+      transition: 0.3s;
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover{
+        color: $hover-link;
+      }
+      &:first-child{
+        margin-left: 0;
+      }
+     
+       .icon-up {
+         font-size: 14px;
+         position: relative;
+         border: none;
+        //  top: -3px;
+       }
+       &-active{
+         color: $hover-link;
+         .icon-up{
+           transform: rotate(280deg);
+               transform: rotate(180deg);
+               top: 3px;
+               transition: 0.3s;
+         }
+       }
+    }
+   
+  }
+  .pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    .page-item {
+      width: 50px;
+      height: 50px;
+      border: 1px solid $main-btn;
+      font-size: 22px;
+       color: #433f3e;
+      line-height: 50px;
+      text-align: center;
+      border-right: none;
+      &:first-child{
+        border-right: none;
+         border-top-left-radius:3px;
+         border-bottom-left-radius:3px;
+      }
+      &:last-child{
+         border-right: 1px solid $main-btn;
+         border-top-right-radius:3px;
+         border-bottom-right-radius:3px;
+      }
+      &:hover{
+        color: $hover-link;
+      }
+      &-active{
+       color: $hover-link;
+      }
+    }
+  }
+}
+@media(max-width:1009px){
+  .catalog{
+    .wrap-catalog{
+      flex-wrap: wrap;
+    }
+    .wrap-products{
+      margin-left: 0;
+      justify-content: center;
+    }
+    .card-sort{
+      margin-top: 30px;
+      margin-left: 0;
+      justify-content: center;
+    }
+    .catalog-filter__block{
+      width: 500px;
+      
+    }
+    .filter-block__item{
+      display: none;
+    }
+  }
+  .form-filter{
+    margin: 0 auto;
+  }
+}
+@media(max-width:600px){
+  .catalog{
+    padding-top: 120px;
+  }
+}
+@media(max-width:534px){
+  .catalog{
+    .catalog-title {
+      font-size: 18px;
+    }
+   .catalog-filter__block {
+     width: 300px;
+   }
+   .card-sort{
+     font-size: 11px;
+   }
+  }
+}
+@media(max-width:399px){
+  .catalog{
+   
+   .catalog-filter__block {
+     width: 290px;
+   }
+   .card-sort{
+     font-size: 9px;
+     margin-bottom: 20px;
+   }
+  }
+}
+@media(max-width:350px){
+  .catalog{
+   
+   .card-sort{
+     font-size: 9px;
+     margin-bottom: 20px;
+   }
+  }
+}
