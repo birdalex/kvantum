@@ -562,8 +562,8 @@
 
   .close-list__item {
     position: relative;
-    width: 16px;
-    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
     border: 1px solid #000;
     border-radius: 50%;
     cursor: pointer;
@@ -849,29 +849,23 @@
       }
       .burger-catalog{
         display: none;
-      }
-      
+      }    
       .submenu-catalog li{
         width: 100%;
       }
       .submenu-catalog{
         position: static;
       }
-      // .wrapping-submenu-catalog{
-      //   position: static;
-      // }
       .basket-block{
         display: none;
       }
       .basket-block-active{
         width: 100%;
         top:0;
-       
-       
       }
 
       .triangle{
-        right: 105px;
+        right: 74px;
       }
       .header-top-link{
         top: 0;

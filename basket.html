@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/slick.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Kvantum</title>
+</head>
+
+<body>
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-navigation">
+          <nav>
+            <ul class="header-top-link">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Гарантии</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header-sub">
+        <div id="burger" class="burger-menu"><span></span></div>
+        <div class="logo">
+          <a href="#"><img src="./img/logo/logo-quantum.png" alt="logo"></a>
+        </div>
+        <div class="logo-mob">
+          <img src="./img/logo/logo-quantum-mob.png" alt="logo">
+        </div>
+        <div class="form-block">
+          <a href="#" class="warranty-link">
+            <div class="warranty-block">
+              <div class="warranty-icon"></div>
+              <div class="warranty-text">Гарантия лучшие цены</div>
+            </div>
+          </a>
+          <form id="form" action="#">
+            <div class="serch">
+              <label for="input-search" class="search__icon">
+                <img src="./img/icon/search-icon.png" alt="icon-serch">
+              </label>
+              <input type="search" name="q" value="" placeholder="Поиск" class="search__input">
+              <input name="s" type="submit" value="Найти" class="search__submit">
+            </div>
+          </form>
+        </div>
+        <div class="search-icon__mob"><i class="icon-search"></i></div>
+        <div class="basket-icon__mob"><i class="icon-basket"></i></div>
+        <div class="header-contacts-block">
+          <div class="header-contacts-phone">
+            <a class="pnone-desktop" href="tel:+38093111111111">+38 (093) 123-45-67</a>
+            <a class="pnone-mob icon-phone" href="tel:+38093111111111"></a>
+          </div>
+          <div class="header-contacts-street">
+            г.Харьков ул. Квитки-Основьяненко, 3
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div id="catolog-btn" class="catalog-block">
+          <span class="burger-catalog"></span>
+          <div class="catalog-block-text">Каталог товаров</div>
+          <span id="marker-catalog" class="marker-catalog"></span>
+        </div>
+        <!-- КАТАЛОГ ТОВАРОВ -->
+        <ul class="menu-catalog">
+          <li>
+            <a href="#" class="catalog-headline__link">Системы водопровода и отпеления<span
+                class="marker-catalog__link"></span> </a>
+
+            <div class="wrapping-submenu-catalog">
+              <ul class="submenu-catalog">
+                <li class="submenu-catalog-title">Разделы</li>
+                <li><a href="#">Системы внутреннего водопровода Wavin Ekoplastik (Чехия)</a></li>
+                <li><a href="#">Запорная арматура и латунные фитинги SLOVARM (Словакия)</a></li>
+                <li><a href="#">Фитинги зажимные компрессионные для соединения труб из полиэтилена UNIDELTA
+                    (Италия)</a></li>
+                <li><a href="#">Трубы ПЭ для напорного водопровода Мпласт</a></li>
+                <li><a href="#">Хомуты для вырезки PN8, PN10, PN16 чёрные SAB (Италия)</a></li>
+                <li><a href="#">Зажимные (компрессионные) Фитинги Santehplast Украина</a></li>
+              </ul>
+            </div>
+
+
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Канализационные системы <span
+                class="marker-catalog__link"></span> </a>
+
+            <div class="wrapping-submenu-catalog">
+              <ul class="submenu-catalog">
+                <li class="submenu-catalog-title">Разделы</li>
+                <li><a href="#">Канализационная система Wavin (Нидерланды - Польша) внутренняя</a></li>
+                <li><a href="#">Канализационная система Ostendorf (Германия)</a></li>
+                <li><a href="#">Система Мпласт ПВХ (Украина) для наружной канализации</a></li>
+                <li><a href="#">Канализационная система ИНСТАЛЛПЛАСТ-ХВ (Украина) внутренняя</a></li>
+                <li><a href="#">Канализационная система Европласт (Украина) внутренняя</a></li>
+                <li><a href="#">Mcalpine</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Настенные крепления для телевизоров (KVADO)</a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Электрические обогреватели
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Капельный полив
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Dytron паяльники и насадки для пластиковых труб
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Металлические хомуты
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Теплый пол
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Люки смотровые и резиновые
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Ручной инсрумент
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+          <li>
+            <a href="#" class="catalog-headline__link">Терморегуляторы
+              <!-- <span class="marker-catalog__link"></span> --></a>
+          </li>
+        </ul>
+        <!-- КАТАЛОГ ТОВАРОВ END -->
+        <div class="header-top-navigation header-top-navigation ">
+
+          <nav>
+            <ul id="mob-menu" class="header-top-link header-bottom-link">
+
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Гарантии</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="basket-block" class="basket-block">
+          <div class="basket-block__img">
+            <img src="./img/icon/shopping-cart.png" alt="shopping-cart-icon">
+          </div>
+          <div class="basket-block__sum">1 111 <span>грн</span></div>
+          <div class="basket-block__marker"><span id="marker-basket" class="marker-basket"></span></div>
+        </div>
+        <div class="basket-block-active">
+          <span class="triangle"></span>
+          <div class="basket-list__item">
+            <div class="close-list__item"><span></span></div>
+            <a href="#" class="basket-list__img"><img src="./img/basket-img.jpg" alt=""></a>
+            <div class="basket-list__content">
+              <a href="#" class="basket-list__content-name">Гостиная Кентаки белый 1</a>
+              <a href="#" class="basket-list__content-price">1 шт на 61 920 руб.</a>
+            </div>
+          </div>
+          <div class="basket-sum">
+            <div class="basket-sum__text">Итого:</div>
+            <div class="basket-sum__num">1 123 <span class="grn">грн</span></div>
+          </div>
+          <div class="basket-btn">
+            <a class="basket-btn__one" href="#">Купить в один клик</a>
+            <a class="basket-btn__order" href="#">Оформить заказ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </header>
+  <section class="basket">
+   <div class="container">
+     <nav aria-label="breadcrumb">
+       <ul class="breadcrumb">
+         <li class="breadcrumb-item"><a href="#">Главная</a></li>
+         <li class="breadcrumb-item aria-current=" page"">Корзина</li>
+       </ul>
+     </nav>
+      <h1 class="basket-title">Корзина</h1>
+     <div class="basket-block">
+       <div class="basket-list__item">
+         <div class="close-list__item"><span></span></div>
+         <a href="#" class="basket-list__img"><img src="./img/cart/219381703_metalloplastikovaya-truba-pe-xalpe-rt.jpg" alt=""></a>
+         <div class="basket-list__content">
+           <a href="#" class="basket-list__content-name">Кран со встроенным проточным электрическим водонагревателем 3
+             кВт (для кухни и ванной комнаты) Rapid</a>
+         </div>
+         <div class="basket-list__amount">
+           <span>-</span>
+           <input type="text" name="" id="amout-basket" value="1">
+           <span>+</span>
+         </div>
+           <div class="basket-list__sum">
+             <div class="basket-sum__num">1 123 <span class="grn">грн</span></div>
+           </div>
+       </div>
+       <div class="basket-list__item">
+         <div class="close-list__item"><span></span></div>
+         <a href="#" class="basket-list__img"><img src="./img/cart/219381703_metalloplastikovaya-truba-pe-xalpe-rt.jpg" alt=""></a>
+         <div class="basket-list__content">
+           <a href="#" class="basket-list__content-name">Кран со встроенным проточным электрическим водонагревателем 3
+             кВт (для кухни и ванной комнаты) Rapid</a>
+         </div>
+         <div class="basket-list__amount">
+           <span>-</span>
+           <input type="text" name="" id="amout-basket" value="1">
+           <span>+</span>
+         </div>
+          <div class="basket-list__sum">
+            <div class="basket-sum__num">1 123 <span class="grn">грн</span></div>
+          </div>
+       </div>
+      
+     </div>
+   </div>
+  </section>
+  <section class="callback-form">
+    <div class="container">
+      <h1 class="callback-form__title">Оформление заказа</h1>
+      <div class="form-order">
+        <form id="brif" class="brif" action="#" method="GET">
+          <div class="info-client">
+            <label for="#">Информация о получателе:</label>
+            <input type="text" name="user-name" id="" placeholder="Имя">
+            <input type="text" name="user-surname" id="" placeholder="Фамилия">
+            <input type="tel" name="user-phone" id="user-phone" placeholder="Номер телефона">
+          </div>
+
+        </form>
+        <div class="form-blcok__btn">
+            <div class="form-btn__text">Итого к оплате:</div>
+             <div class="basket-sum__num">1 123 <span class="grn">грн</span></div>
+              <input type="submit" form="brif" value="Оформить заказ">
+        </div>
+      </div>
+        
+    </div>
+  
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-contacts">
+        <div class="footer-contacts-item footer-logo">
+          <img src="img/footer/footer_logo.png" alt="">
+        </div>
+        <div class="footer-contacts-item footer-phone">
+          Телефон:
+          <a href="tel:+37 (ХХ) ХХХ ХХХ">+37 (ХХ) ХХХ ХХХ</a>
+        </div>
+        <div class="footer-contacts-item footer-mail">
+          E-mail:
+          <a href="mailto:santeh_gold@gmail.com">santeh_gold@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-social">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="#" class="social-item__link">
+                <img src="img/social/facebook.svg">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-item__link">
+                <img src="img/social/instagram.svg">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-item__link">
+                <img src="img/social/vk.svg">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-lists__item footer-nav-items">
+          <h3 class="footer-nav-title">
+            О компании
+          </h3>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Контакты
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Гарантия и возврат
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Гарантия цены
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Гарантия качества
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-lists__item footer-nav-items">
+          <h3 class="footer-nav-title">
+            Разделы
+          </h3>
+
+          <ul class="footer-nav-list footer-nav-item">
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Распродажа
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Скидки и акции
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Оплата
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-item__link">
+                Отзывы
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="footer-lists__item footer-nav-items">
+            <h3 class="footer-nav-title">
+              Новости
+            </h3>
+          </div> -->
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="copyright">
+          @ Магазин сантехники "СантехГолд"
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="/js/jquery-3.3.1.min.js"><\/script>')
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src="./js/jquery.zoom.min.js"></script>
+  <script src="./js/jquery.maskedinput.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./slick/slick.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/slider.js"></script>
+</body>
+
+</html>
